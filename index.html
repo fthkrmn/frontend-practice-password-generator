@@ -1,31 +1,16 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="index.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <h1></h1>
-        <script src="index.js"></script>
-        <div id="heading">
-            <p id="heading_main">Generate a</p>
-            <p id="heading_highlighted_main">random password</p>
-            <p id="heading_subtitle">Never use an insecure password again.</p>
-        </div>
-        <div id="generate_boxes">
-            <button id="btn_generate">Generate Passwords</button>
-            <input type="number" id="digits" name="digits" min="8" max="17" value="15">
-            <p id="btn_generate_digits">Digits</p>
-        </div>
-        <div id="hbar"></div>
-        <div id="password_boxes">
-            <div id="password_box_one">
-                <p id="password_box_one_txt">password one</p>
-            </div>
-            <div id="password_box_two">
-                <p id="password_box_two_txt">password two</p>
-            </div>
-        </div>
-    </body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <title>Password Generator</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>

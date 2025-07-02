@@ -1,0 +1,248 @@
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #1F2937;
+}
+
+#root {
+  margin: auto;
+  height: 60%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Heading */
+.heading {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: -0.025em;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+#heading_highlighted_main {
+  margin-top: -40px;
+  margin-bottom: -5px;
+  color: #4ADF86;
+}
+
+
+/* Supporting text */
+#heading_subtitle,
+.tx_copy_info {
+  width: 100%;
+  height: 28px;
+  text-align: center;
+  justify-self: center;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+
+  /* Medium grey */
+  color: #D5D4D8;
+}
+
+
+#generate_boxes {
+  width: 100%;
+  height: 42px;
+  gap: 60px;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+}
+
+/* Button */
+#btn_generate {
+  background: #10B981;
+  /* shadow/sm */
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  border: 0;
+  margin-right: -50px;
+  
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+
+input[type=number] {
+  width: 55px;
+  height: 42px;
+  padding: 4px 3px;
+  box-sizing: border-box;
+  font-size: 1.125rem;
+}
+
+#btn_generate_digits {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  color: #FFFFFF;
+  align-self: center;
+  margin-left: -54px;
+}
+
+
+/* hbar */
+#hbar {
+  width: 70%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border: 1px solid #2F3E53;
+}
+
+.password_boxes {
+  align-self: center;
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 1.25em;
+}
+
+/* Rectangle 1 */
+#password_box_one {
+  width: 211px;
+  height: 2em;
+
+  background: #273549;
+  border-radius: 6px;
+  
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 38px;
+  /* identical to box height, or 200% */
+  text-align: center;
+
+  color: #55F991;
+  cursor: pointer;
+}
+
+
+#password_box_one_txt {
+  width: 211px;
+  height: 24px;
+
+  background: #273549;
+  border-radius: 6px;
+  
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 10px;
+  /* identical to box height, or 200% */
+  text-align: center;
+
+  color: #55F991;
+}
+
+
+/* Rectangle 2 */
+#password_box_two {
+  width: 211px;
+  height: 2em;
+
+  background: #273549;
+  border-radius: 6px;
+  
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 38px;
+  /* identical to box height, or 200% */
+  text-align: center;
+
+  color: #55F991;
+  cursor: pointer;
+}
+
+#password_box_two_txt {
+  width: 211px;
+  height: 24px;
+
+  background: #273549;
+  border-radius: 6px;
+  
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 10px;
+  /* identical to box height, or 200% */
+  text-align: center;
+
+  color: #55F991;
+}
+
+
+.tx_copy_info {
+  font-size: 0.875rem;
+}
+
+.tx_copied_notice {
+  position: absolute;
+  width: 100%;
+  height: 28px;
+  text-align: center;
+  justify-self: center;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 28px;
+  color: #4ADF86;
+  animation: slideIn 0.5s ease-in forwards;
+  position: absolute;
+  margin-top: 16em;
+}
+
+.tx_copied_notice.slide-out {
+  animation: slideOut 0.5s ease-out forwards;
+}
+
+/* Slide-in from the right */
+@keyframes slideIn {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Slide-out to the right */
+@keyframes slideOut {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
